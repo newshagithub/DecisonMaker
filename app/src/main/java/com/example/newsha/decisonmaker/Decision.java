@@ -6,17 +6,17 @@ package com.example.newsha.decisonmaker;
 
 public class Decision {
 
-    int id, weight, f1rate, f2rate, f3rate, f4rate, f5rate, result;
+    int weight, f1rate, f2rate, f3rate, f4rate, f5rate, result;
     String topic, option, factor;
 
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    //** public void setId(int id) {
+    //this.id = id;
+    // }
 
-    public int getId() {
-        return id;
-    }
+    //public int getId() {
+    //    return id;
+    //}
 
     public void setTopic(String topic) {
         this.topic = topic;

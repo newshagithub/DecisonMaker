@@ -21,7 +21,8 @@
         <activity android:name=".Factor2" />
         <activity android:name=".Factor3" />
         <activity android:name=".Factor4" />
-        <activity android:name=".Factor5"></activity>
+        <activity android:name=".Factor5" />
+        <activity android:name=".Result"></activity>
     </application>
 
 </manifest>

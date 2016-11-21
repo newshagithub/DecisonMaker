@@ -190,5 +190,5 @@
         android:layout_below="@+id/textView53"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
-        android:id="@+id/f5next-btn" />
+        android:id="@+id/f5next_btn" />
 </RelativeLayout>
