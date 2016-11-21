@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DecisonMaker</string>
+    <string name="decision_page_into">Add a new decision topic or view the already made decisions by clicking View Contents</string>
+    <string name="option_page_intro">Insert your options bellow:</string>
+    <string name="factor_page_intro">Insert your factors that you would need to consider for this decision making here and give them weight:</string>
+    <string name="factor1_intro">Rate each option below based on factor,  </string>
+    <string name="emptyString"></string>
+</resources>
