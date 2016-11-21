@@ -8,39 +8,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.newsha.decisonmaker.factor1">
+    tools:context="com.example.newsha.decisonmaker.Factor1">
+
+    <TextView
+        android:text="@string/factor1_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:id="@+id/textView8"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView8"
-        android:id="@+id/TVfactor2"
+        android:id="@+id/TVfactor1"
+        android:layout_above="@+id/textView22"
         android:layout_alignLeft="@+id/textView8"
         android:layout_alignStart="@+id/textView8" />
-
-    <TextView
-        android:text="1. "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/TVfactor2"
-        android:layout_toEndOf="@+id/TVfactor2"
-        android:layout_toRightOf="@+id/TVfactor2"
-        android:layout_marginTop="81dp"
-        android:id="@+id/textView10"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_alignLeft="@+id/TVfactor2"
-        android:layout_alignStart="@+id/TVfactor2" />
-
-    <TextView
-        android:text="3. "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:id="@+id/textView18"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_alignLeft="@+id/textView17"
-        android:layout_alignStart="@+id/textView17" />
 
     <TextView
         android:text="4. "
@@ -112,17 +99,6 @@
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar7"
-        style="@android:style/Widget.Holo.Light.RatingBar.Small"
-        android:layout_marginRight="23dp"
-        android:layout_marginEnd="23dp"
-        android:layout_alignTop="@+id/textView22"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/ratingBar9"
         style="@android:style/Widget.Holo.Light.RatingBar.Small"
         android:layout_alignTop="@+id/textView24"
@@ -154,7 +130,7 @@
         android:layout_below="@+id/ratingBar11"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
-        android:id="@+id/button" />
+        android:id="@+id/f1next_btn" />
 
     <RatingBar
         android:layout_width="wrap_content"
@@ -166,24 +142,47 @@
         android:layout_alignStart="@+id/ratingBar10" />
 
     <TextView
-        android:text="@string/factor1_intro"
+        android:text="3. "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:id="@+id/textView8"
+        android:id="@+id/textView18"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textView10"
+        android:layout_toLeftOf="@+id/textView24"
+        android:layout_toStartOf="@+id/textView24"
+        android:layout_marginTop="73dp" />
 
     <TextView
         android:text="2. "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
         android:id="@+id/textView17"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_below="@+id/textView10"
-        android:layout_alignLeft="@+id/textView10"
-        android:layout_alignStart="@+id/textView10" />
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/textView24"
+        android:layout_alignRight="@+id/textView24"
+        android:layout_alignEnd="@+id/textView24" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar7"
+        style="@android:style/Widget.Holo.Light.RatingBar.Small"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="1. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:id="@+id/textView10"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@+id/textView8"
+        android:layout_toRightOf="@+id/TVfactor1"
+        android:layout_toEndOf="@+id/TVfactor1" />
 
 </RelativeLayout>
