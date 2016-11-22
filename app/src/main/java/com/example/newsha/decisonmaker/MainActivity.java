@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
             String topicstr = topic.getText().toString();
 
             // check if no value is entered
-            if (topicstr == null) {
+            if (topicstr == null || topicstr.trim().equals("null") || topicstr.trim()
+                    .length() <= 0) {
 
                 //popup error msg
                 Toast pass = Toast.makeText(MainActivity.this, "Please enter a topic!", Toast.LENGTH_SHORT);
