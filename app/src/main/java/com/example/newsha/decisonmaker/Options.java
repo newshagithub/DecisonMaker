@@ -39,7 +39,7 @@ public class Options extends AppCompatActivity {
 
             // check if at least 2 options are entered
             if ((option1str == null || option1str.trim().equals("null") || option1str.trim()
-                    .length() <= 0) && (option2str == null || option2str.trim().equals("null") || option2str.trim()
+                    .length() <= 0) || (option2str == null || option2str.trim().equals("null") || option2str.trim()
                     .length() <= 0)) {
 
                 //popup error msg
