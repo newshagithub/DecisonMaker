@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                     .length() <= 0) {
 
                 //popup error msg
-                Toast pass = Toast.makeText(MainActivity.this, "Please enter a topic!", Toast.LENGTH_SHORT);
+                Toast pass = Toast.makeText(MainActivity.this, "Please enter a topic first. :)", Toast.LENGTH_SHORT);
                 pass.show();
 
             } else {
