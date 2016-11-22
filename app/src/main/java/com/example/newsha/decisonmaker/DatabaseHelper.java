@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
     private static final String DATABASE_NAME = "decisions.db";
     private static final String TABLE_NAME = "decision";
     private static final String COLUMN_ID = "id";
@@ -32,15 +32,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static String TABLE_CREATE = "CREATE TABLE " + TABLE_NAME +
             "(" + COLUMN_ID + " INTEGER NOT NULL UNIQUE, " +
             COLUMN_TOPIC + " TEXT NOT NULL, " +
-            COLUMN_OPTION + " TEXT NOT NULL, " +
-            COLUMN_FACTOR + " TEXT NOT NULL, " +
-            COLUMN_WEIGHT + " INTEGER NOT NULL, " +
-            COLUMN_F1RATE + " INTEGER NOT NULL, " +
-            COLUMN_F2RATE + " INTEGER NOT NULL, " +
-            COLUMN_F3RATE + " INTEGER NOT NULL, " +
-            COLUMN_F4RATE + " INTEGER NOT NULL, " +
-            COLUMN_F5RATE + " INTEGER NOT NULL, " +
-            COLUMN_RESULT + " TEXT NOT NULL);";
+            COLUMN_OPTION + " TEXT, " +
+            COLUMN_FACTOR + " TEXT, " +
+            COLUMN_WEIGHT + " INTEGER, " +
+            COLUMN_F1RATE + " INTEGER, " +
+            COLUMN_F2RATE + " INTEGER, " +
+            COLUMN_F3RATE + " INTEGER, " +
+            COLUMN_F4RATE + " INTEGER, " +
+            COLUMN_F5RATE + " INTEGER, " +
+            COLUMN_RESULT + " TEXT);";
 
     //constructor
     public DatabaseHelper(Context context){

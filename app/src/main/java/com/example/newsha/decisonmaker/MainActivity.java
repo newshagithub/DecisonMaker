@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        // is ViewContents button is clicked
+        // ** if ViewContents button is clicked
         if(v.getId() == R.id.vcontent_btn)
         {
 

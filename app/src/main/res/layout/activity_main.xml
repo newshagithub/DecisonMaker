@@ -20,7 +20,9 @@
         android:hint="add new topic"
         android:layout_below="@+id/textView2"
         android:layout_alignLeft="@+id/add_decision_btn"
-        android:layout_alignStart="@+id/add_decision_btn" />
+        android:layout_alignStart="@+id/add_decision_btn"
+        android:layout_alignRight="@+id/vcontent_btn"
+        android:layout_alignEnd="@+id/vcontent_btn" />
 
     <Button
         android:text="View Contents"
