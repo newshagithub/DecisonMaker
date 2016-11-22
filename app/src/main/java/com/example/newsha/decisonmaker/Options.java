@@ -21,7 +21,7 @@ public class Options extends AppCompatActivity {
         tv.setText(dtopic);
     }
 
-    public void onAddOptsClick(View v) {
+    public void onAddOptionsClick(View v) {
         // ** if add button is clicked
         if (v.getId() == R.id.btnOptions) {
 
@@ -38,22 +38,25 @@ public class Options extends AppCompatActivity {
             String option5str = option5.getText().toString();
 
             // check if at least 2 options are entered
-            if (option1str != null && option2str != null) {
+            if ((option1str == null || option1str.trim().equals("null") || option1str.trim()
+                    .length() <= 0) && (option2str == null || option2str.trim().equals("null") || option2str.trim()
+                    .length() <= 0)) {
+
+                //popup error msg
+                Toast pass = Toast.makeText(Options.this, "Please enter at least 2 options. :)", Toast.LENGTH_SHORT);
+                pass.show();
+
+            } else {
 
                 //insert the details in db
                 //Decision d = new Decision();
-               // d.setOption(option1str);
+                // d.setOption(option1str);
 
                 //helper.addDecision(d);
 
                 Intent i = new Intent(Options.this, Factors.class);
                 startActivity(i);
 
-            } else {
-
-                //popup error msg
-                Toast pass = Toast.makeText(Options.this, "Please enter at least 2 options. :)", Toast.LENGTH_SHORT);
-                pass.show();
             }
 
 
