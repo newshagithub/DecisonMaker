@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
             } else {
 
                 //insert the details in db
-                Decision d = new Decision();
-                d.setTopic(topicstr);
+               // Decision d = new Decision();
+                //d.setTopic(topicstr);
 
-                helper.addDecision(d);
+               // helper.addDecision(d);
 
                 Intent i = new Intent(MainActivity.this, Options.class);
                 i.putExtra("TVdtopic", topicstr);

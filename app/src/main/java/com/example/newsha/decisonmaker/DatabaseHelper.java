@@ -89,5 +89,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(query);
         this.onCreate(db);
     }
+
+    // operations
+
+    // Getting single decision
+
 }
 

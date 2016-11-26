@@ -54,11 +54,20 @@ public class Options extends AppCompatActivity {
 
                 //helper.addDecision(d);
 
+                //passing options to factors
+                Intent i1 = new Intent(Options.this, Factor1.class);
+                i1.putExtra("TVoption1", option1str);
+                i1.putExtra("TVoption2", option2str);
+                i1.putExtra("TVoption3", option3str);
+                i1.putExtra("TVoption4", option4str);
+                i1.putExtra("TVoption5", option5str);
+
+
+
                 Intent i = new Intent(Options.this, Factors.class);
                 startActivity(i);
 
             }
-
 
         }
     }

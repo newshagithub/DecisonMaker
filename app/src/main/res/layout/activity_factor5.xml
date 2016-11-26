@@ -48,19 +48,8 @@
         android:layout_alignTop="@+id/textView41"
         android:layout_toRightOf="@+id/textView41"
         android:layout_toEndOf="@+id/textView41"
-        android:id="@+id/option1"
+        android:id="@+id/TVoption1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratef5_op1"
-        style="@android:style/Widget.Holo.Light.RatingBar.Small"
-        android:layout_alignBottom="@+id/option1"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="18dp"
-        android:layout_marginEnd="18dp" />
 
     <TextView
         android:text="2. "
@@ -80,17 +69,8 @@
         android:layout_alignTop="@+id/TextView42"
         android:layout_toRightOf="@+id/TextView42"
         android:layout_toEndOf="@+id/TextView42"
-        android:id="@+id/option2"
+        android:id="@+id/TVoption2"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratef5_op2"
-        style="@android:style/Widget.Holo.Light.RatingBar.Small"
-        android:layout_alignTop="@+id/option2"
-        android:layout_alignLeft="@+id/ratef5_op1"
-        android:layout_alignStart="@+id/ratef5_op1" />
 
     <TextView
         android:text="3. "
@@ -99,8 +79,8 @@
         android:id="@+id/textView48"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:layout_below="@+id/TextView42"
-        android:layout_alignRight="@+id/option2"
-        android:layout_alignEnd="@+id/option2"
+        android:layout_alignRight="@+id/TVoption2"
+        android:layout_alignEnd="@+id/TVoption2"
         android:layout_marginTop="29dp" />
 
     <TextView
@@ -108,19 +88,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView48"
-        android:layout_toRightOf="@+id/option2"
-        android:layout_toEndOf="@+id/option2"
-        android:id="@+id/option3"
+        android:layout_toRightOf="@+id/TVoption2"
+        android:layout_toEndOf="@+id/TVoption2"
+        android:id="@+id/TVoption3"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratef5_op3"
-        style="@android:style/Widget.Holo.Light.RatingBar.Small"
-        android:layout_alignBottom="@+id/option3"
-        android:layout_alignLeft="@+id/ratef5_op2"
-        android:layout_alignStart="@+id/ratef5_op2" />
 
     <TextView
         android:text="4. "
@@ -138,19 +109,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView50"
-        android:layout_toRightOf="@+id/option3"
-        android:layout_toEndOf="@+id/option3"
-        android:id="@+id/option4"
+        android:layout_toRightOf="@+id/TVoption3"
+        android:layout_toEndOf="@+id/TVoption3"
+        android:id="@+id/TVoption4"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratef5_op4"
-        style="@android:style/Widget.Holo.Light.RatingBar.Small"
-        android:layout_alignBottom="@+id/option4"
-        android:layout_alignLeft="@+id/ratef5_op3"
-        android:layout_alignStart="@+id/ratef5_op3" />
 
     <TextView
         android:text="@string/emptyString"
@@ -159,8 +121,8 @@
         android:id="@+id/textView53"
         android:layout_alignBaseline="@+id/textView52"
         android:layout_alignBottom="@+id/textView52"
-        android:layout_toRightOf="@+id/option4"
-        android:layout_toEndOf="@+id/option4"
+        android:layout_toRightOf="@+id/TVoption4"
+        android:layout_toEndOf="@+id/TVoption4"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
@@ -174,15 +136,6 @@
         android:layout_toLeftOf="@+id/textView53"
         android:layout_toStartOf="@+id/textView53" />
 
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratef5_op5"
-        style="@android:style/Widget.Holo.Light.RatingBar.Small"
-        android:layout_alignTop="@+id/textView53"
-        android:layout_alignLeft="@+id/ratef5_op4"
-        android:layout_alignStart="@+id/ratef5_op4" />
-
     <Button
         android:text="next"
         android:layout_width="wrap_content"
@@ -190,5 +143,70 @@
         android:layout_below="@+id/textView53"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
-        android:id="@+id/f5next_btn" />
+        android:id="@+id/btnFactor5" />
+
+    <TextView
+        android:text="Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:layout_above="@+id/rateF5O1"
+        android:layout_toEndOf="@+id/textView33" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/rateF5O1"
+        android:layout_alignBaseline="@+id/TVoption1"
+        android:layout_alignBottom="@+id/TVoption1"
+        android:layout_alignRight="@+id/rateF5O2"
+        android:layout_alignEnd="@+id/rateF5O2"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/rateF5O2"
+        android:layout_below="@+id/rateF5O1"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/rateF5O2"
+        android:layout_alignLeft="@+id/rateF5O2"
+        android:layout_alignStart="@+id/rateF5O2"
+        android:id="@+id/rateF5O3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/rateF5O3"
+        android:layout_alignRight="@+id/rateF5O3"
+        android:layout_alignEnd="@+id/rateF5O3"
+        android:id="@+id/rateF5O4"
+        android:layout_alignLeft="@+id/rateF5O3"
+        android:layout_alignStart="@+id/rateF5O3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/rateF5O4"
+        android:layout_alignRight="@+id/rateF5O4"
+        android:layout_alignEnd="@+id/rateF5O4"
+        android:id="@+id/rateF5O5"
+        android:layout_alignLeft="@+id/rateF5O3"
+        android:layout_alignStart="@+id/rateF5O3" />
 </RelativeLayout>
