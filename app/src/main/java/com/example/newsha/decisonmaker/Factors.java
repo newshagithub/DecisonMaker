@@ -12,14 +12,29 @@ import android.widget.Toast;
 
 public class Factors extends AppCompatActivity {
 
+    // ** class-level variables
+    String dtopic = "";
+    String option1 = "";
+    String option2 = "";
+    String option3 = "";
+    String option4 = "";
+    String option5 = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_factors);
-    }
 
-    public void onAddFactorsClick(View v) {
+
+            option1 = getIntent().getStringExtra("TVoption1");
+            option2 = getIntent().getStringExtra("TVoption2");
+            option3 = getIntent().getStringExtra("TVoption3");
+            option4 = getIntent().getStringExtra("TVoption4");
+            option5 = getIntent().getStringExtra("TVoption5");
+
+
+    }
+    public void onAddClick(View v) {
         // ** if add button is clicked
         if (v.getId() == R.id.btnFactors) {
 
@@ -55,7 +70,6 @@ public class Factors extends AppCompatActivity {
             int wf4num = Integer.parseInt(ratef4);
             int wf5num = Integer.parseInt(ratef5);
 
-
             // check if at least 1 factor are entered
             if ((factor1str == null || factor1str.trim().equals("null") || factor1str.trim()
                     .length() <= 0)) {
@@ -73,14 +87,29 @@ public class Factors extends AppCompatActivity {
                 //helper.addDecision(d);
 
                 // passing on data
-                Intent i = new Intent(Factors.this, Factor1.class);
-                // to activity Factor 1
-                i.putExtra("TVfactor1", factor1str);
-                i.putExtra("TVfactor2", factor2str);
-                i.putExtra("TVfactor3", factor3str);
-                i.putExtra("TVfactor4", factor4str);
-                i.putExtra("TVfactor5", factor5str);
-                startActivity(i);
+                Intent intent = new Intent(Factors.this, Factor1.class);
+                // ** topic
+                intent.putExtra("TVdtopic", dtopic);
+                // ** options
+                intent.putExtra("TVoption1", option1);
+                intent.putExtra("TVoption2", option2);
+                intent.putExtra("TVoption3", option3);
+                intent.putExtra("TVoption4", option4);
+                intent.putExtra("TVoption5", option5);
+                // factors
+                intent.putExtra("TVfactor1", factor1str);
+                intent.putExtra("TVfactor2", factor2str);
+                intent.putExtra("TVfactor3", factor3str);
+                intent.putExtra("TVfactor4", factor4str);
+                intent.putExtra("TVfactor5", factor5str);
+                // weights
+                intent.putExtra("TVweight1", wf1num);
+                intent.putExtra("TVweight2", wf2num);
+                intent.putExtra("TVweight3", wf3num);
+                intent.putExtra("TVweight4", wf4num);
+                intent.putExtra("TVweight5", wf5num);
+
+                startActivity(intent);
             }
 
         }

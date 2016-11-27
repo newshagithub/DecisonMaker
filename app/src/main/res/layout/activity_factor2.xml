@@ -22,6 +22,8 @@
 
     <TextView
         android:text="@string/emptyString"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_blue_dark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView9"
@@ -65,23 +67,23 @@
         android:id="@+id/btnFactor2"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="29dp" />
+        android:layout_marginBottom="29dp"
+        android:onClick="onRateF2Click" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView15"
-        android:layout_toRightOf="@+id/TVoption1"
-        android:layout_toEndOf="@+id/TVoption1"
-        android:id="@+id/TVoption2" />
+        android:layout_toEndOf="@+id/textView12"
+        android:id="@+id/TVoption2"
+        android:layout_toRightOf="@+id/textView12" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView20"
-        android:layout_toLeftOf="@+id/f2next_btn"
         android:id="@+id/TVoption4"
         android:layout_toRightOf="@+id/TVoption3"
         android:layout_toEndOf="@+id/TVoption3" />

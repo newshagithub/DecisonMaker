@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
             } else {
 
-                //insert the details in db
-               // Decision d = new Decision();
-                //d.setTopic(topicstr);
+                // insert the details in db
+                // Decision d = new Decision();
+                // d.setTopic(topicstr);
 
                // helper.addDecision(d);
 

@@ -10,13 +10,16 @@ import android.widget.Toast;
 
 public class Options extends AppCompatActivity {
 
+    // ** class-level variables
+    String dtopic = "";
+
     DatabaseHelper helper = new DatabaseHelper(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
 
-        String dtopic = getIntent().getStringExtra("TVdtopic");
+        dtopic = getIntent().getStringExtra("TVdtopic");
         TextView tv = (TextView)findViewById(R.id.TVdtopic);
         tv.setText(dtopic);
     }
@@ -37,12 +40,12 @@ public class Options extends AppCompatActivity {
             String option4str = option4.getText().toString();
             String option5str = option5.getText().toString();
 
-            // check if at least 2 options are entered
+            // ** check if at least 2 options are entered
             if ((option1str == null || option1str.trim().equals("null") || option1str.trim()
                     .length() <= 0) || (option2str == null || option2str.trim().equals("null") || option2str.trim()
                     .length() <= 0)) {
 
-                //popup error msg
+                // ** popup error msg
                 Toast pass = Toast.makeText(Options.this, "Please enter at least 2 options. :)", Toast.LENGTH_SHORT);
                 pass.show();
 
@@ -54,18 +57,18 @@ public class Options extends AppCompatActivity {
 
                 //helper.addDecision(d);
 
-                //passing options to factors
-                Intent i1 = new Intent(Options.this, Factor1.class);
-                i1.putExtra("TVoption1", option1str);
-                i1.putExtra("TVoption2", option2str);
-                i1.putExtra("TVoption3", option3str);
-                i1.putExtra("TVoption4", option4str);
-                i1.putExtra("TVoption5", option5str);
+                // ** passing options to factors
+                Intent intent = new Intent(Options.this, Factors.class);
 
+                intent.putExtra("TVdtopic", dtopic);
+                intent.putExtra("TVoption1", option1str);
+                intent.putExtra("TVoption2", option2str);
+                intent.putExtra("TVoption3", option3str);
+                intent.putExtra("TVoption4", option4str);
+                intent.putExtra("TVoption5", option5str);
 
-
-                Intent i = new Intent(Options.this, Factors.class);
-                startActivity(i);
+                // ** start factors activity
+                startActivity(intent);
 
             }
 

@@ -118,7 +118,7 @@
         android:layout_below="@+id/etFactor5"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:onClick="onAddFactorsClick (Factors)" />
+        android:onClick="onAddClick" />
 
     <TextView
         android:text="Factor 4:"
