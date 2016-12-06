@@ -16,9 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:id="@+id/textView33"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView33" />
 
     <TextView
         android:text="@string/emptyString"
@@ -30,28 +29,32 @@
         android:layout_below="@+id/textView33"
         android:layout_alignLeft="@+id/textView33"
         android:layout_alignStart="@+id/textView33"
-        android:id="@+id/TVfactor5" />
+        android:id="@+id/TVfactor5"
+        />
 
     <TextView
         android:text="1. "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/TVfactor5"
-        android:layout_alignLeft="@+id/TVfactor5"
-        android:layout_alignStart="@+id/TVfactor5"
-        android:layout_marginTop="75dp"
-        android:id="@+id/textView41"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textView41" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView41"
-        android:layout_toRightOf="@+id/textView41"
-        android:layout_toEndOf="@+id/textView41"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:id="@+id/TVoption1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_alignBaseline="@+id/textView41"
+        android:layout_alignBottom="@+id/textView41"
+        android:layout_toRightOf="@+id/TVfactor5"
+        android:layout_toEndOf="@+id/TVfactor5" />
 
     <TextView
         android:text="2. "
@@ -60,39 +63,77 @@
         android:layout_below="@+id/textView41"
         android:layout_alignLeft="@+id/textView41"
         android:layout_alignStart="@+id/textView41"
-        android:layout_marginTop="28dp"
-        android:id="@+id/TextView42"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView42" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/TextView42"
-        android:layout_toRightOf="@+id/TextView42"
-        android:layout_toEndOf="@+id/TextView42"
-        android:id="@+id/TVoption2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_alignTop="@+id/textView42"
+        android:layout_toRightOf="@+id/TVoption1"
+        android:layout_toEndOf="@+id/TVoption1"
+        android:id="@+id/TVoption2" />
+
+    <TextView
+        android:text="3. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView42"
+        android:layout_alignLeft="@+id/textView42"
+        android:layout_alignStart="@+id/textView42"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView48" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView48"
-        android:layout_toRightOf="@+id/TVoption2"
-        android:layout_toEndOf="@+id/TVoption2"
-        android:id="@+id/TVoption3"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_alignLeft="@+id/TVoption2"
+        android:layout_alignStart="@+id/TVoption2"
+        android:id="@+id/TVoption3" />
+
+    <TextView
+        android:text="4. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView48"
+        android:layout_alignLeft="@+id/textView48"
+        android:layout_alignStart="@+id/textView48"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textView50" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView50"
-        android:layout_toRightOf="@+id/TVoption3"
-        android:layout_toEndOf="@+id/TVoption3"
-        android:id="@+id/TVoption4"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_alignTop="@+id/textView50"
+        android:layout_alignLeft="@+id/TVoption3"
+        android:layout_alignStart="@+id/TVoption3"
+        android:id="@+id/TVoption4" />
+
+    <TextView
+        android:text="5. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView50"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView52"
+        android:layout_toEndOf="@+id/textView50"
+        android:layout_alignLeft="@+id/textView50"
+        android:layout_alignStart="@+id/textView50"
+        android:layout_toRightOf="@+id/textView50" />
+
+    <Button
+        android:text="next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:id="@+id/btnFactor5"
+        android:onClick="onRateF5Click" />
 
     <TextView
         android:text="@string/emptyString"
@@ -101,19 +142,20 @@
         android:id="@+id/TVoption5"
         android:layout_alignBaseline="@+id/textView52"
         android:layout_alignBottom="@+id/textView52"
-        android:layout_toRightOf="@+id/TVoption4"
-        android:layout_toEndOf="@+id/TVoption4"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_alignLeft="@+id/TVoption4"
+        android:layout_alignStart="@+id/TVoption4" />
 
-    <Button
-        android:text="next"
+    <TextView
+        android:text="Rate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/TVoption5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:id="@+id/btnFactor5"
-        android:onClick="onRateF5Click" />
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:id="@+id/textView16"
+        android:layout_above="@+id/TVoption1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -125,6 +167,8 @@
         android:layout_alignBottom="@+id/TVoption1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
         android:layout_alignLeft="@+id/textView16"
         android:layout_alignStart="@+id/textView16" />
 
@@ -133,11 +177,10 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
+        android:layout_below="@+id/rateF5O1"
+        android:layout_alignRight="@+id/rateF5O1"
+        android:layout_alignEnd="@+id/rateF5O1"
         android:id="@+id/rateF5O2"
-        android:layout_alignBaseline="@+id/TVoption2"
-        android:layout_alignBottom="@+id/TVoption2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignLeft="@+id/rateF5O1"
         android:layout_alignStart="@+id/rateF5O1" />
 
@@ -146,10 +189,10 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/rateF5O3"
         android:layout_below="@+id/rateF5O2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/rateF5O2"
+        android:layout_alignEnd="@+id/rateF5O2"
+        android:id="@+id/rateF5O3"
         android:layout_alignLeft="@+id/rateF5O2"
         android:layout_alignStart="@+id/rateF5O2" />
 
@@ -158,10 +201,10 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/rateF5O4"
         android:layout_below="@+id/rateF5O3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/rateF5O3"
+        android:layout_alignEnd="@+id/rateF5O3"
+        android:id="@+id/rateF5O4"
         android:layout_alignLeft="@+id/rateF5O3"
         android:layout_alignStart="@+id/rateF5O3" />
 
@@ -171,50 +214,11 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/rateF5O5"
-        android:layout_below="@+id/rateF5O4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/TVoption5"
+        android:layout_alignBottom="@+id/TVoption5"
+        android:layout_alignRight="@+id/rateF5O4"
+        android:layout_alignEnd="@+id/rateF5O4"
         android:layout_alignLeft="@+id/rateF5O4"
         android:layout_alignStart="@+id/rateF5O4" />
 
-    <TextView
-        android:text="Rate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView16"
-        android:layout_above="@+id/rateF5O1"
-        android:layout_toEndOf="@+id/textView33" />
-
-    <TextView
-        android:text="4. "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView50"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_alignBaseline="@+id/rateF5O4"
-        android:layout_alignBottom="@+id/rateF5O4"
-        android:layout_alignRight="@+id/TVoption4"
-        android:layout_alignEnd="@+id/TVoption4" />
-
-    <TextView
-        android:text="5. "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView52"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_alignBaseline="@+id/rateF5O5"
-        android:layout_alignBottom="@+id/rateF5O5"
-        android:layout_toLeftOf="@+id/TVoption5"
-        android:layout_toStartOf="@+id/TVoption5" />
-
-    <TextView
-        android:text="3. "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView48"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_alignBaseline="@+id/rateF5O3"
-        android:layout_alignBottom="@+id/rateF5O3"
-        android:layout_alignRight="@+id/TVoption3"
-        android:layout_alignEnd="@+id/TVoption3" />
 </RelativeLayout>

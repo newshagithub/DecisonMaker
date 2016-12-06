@@ -16,9 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
-        android:id="@+id/textView31"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView31" />
 
     <TextView
         android:text="@string/emptyString"
@@ -30,28 +29,42 @@
         android:layout_below="@+id/textView31"
         android:layout_alignLeft="@+id/textView31"
         android:layout_alignStart="@+id/textView31"
-        android:id="@+id/TVfactor4" />
+        android:id="@+id/TVfactor4"
+        />
+
+    <TextView
+        android:text="1. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVfactor4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textView35" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView35"
-        android:layout_toRightOf="@+id/textView35"
-        android:layout_toEndOf="@+id/textView35"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
         android:id="@+id/TVoption1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_alignBaseline="@+id/textView35"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_toRightOf="@+id/TVfactor4"
+        android:layout_toEndOf="@+id/TVfactor4" />
 
     <TextView
         android:text="2. "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:id="@+id/textView39"
         android:layout_below="@+id/textView35"
-        android:layout_toRightOf="@+id/TVfactor4"
-        android:layout_toEndOf="@+id/TVfactor4"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView39" />
 
     <TextView
         android:text="@string/emptyString"
@@ -60,91 +73,89 @@
         android:layout_alignTop="@+id/textView39"
         android:layout_toRightOf="@+id/TVoption1"
         android:layout_toEndOf="@+id/TVoption1"
-        android:id="@+id/TVoption2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:id="@+id/TVoption2" />
 
     <TextView
         android:text="3. "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/TVfactor4"
-        android:layout_toEndOf="@+id/TVfactor4"
-        android:id="@+id/textView42"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_below="@+id/textView39"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView42" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/TVoption2"
-        android:layout_toEndOf="@+id/TVoption2"
-        android:id="@+id/TVoption3"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:layout_alignTop="@+id/textView42"
+        android:layout_alignLeft="@+id/TVoption2"
+        android:layout_alignStart="@+id/TVoption2"
+        android:id="@+id/TVoption3" />
+
+    <TextView
+        android:text="4. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView42"
+        android:layout_alignLeft="@+id/textView42"
+        android:layout_alignStart="@+id/textView42"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textView44" />
 
     <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView44"
-        android:layout_toRightOf="@+id/TVoption3"
-        android:layout_toEndOf="@+id/TVoption3"
-        android:id="@+id/TVoption4"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <TextView
-        android:text="@string/emptyString"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView45"
-        android:layout_toRightOf="@+id/textView45"
-        android:layout_toEndOf="@+id/textView45"
-        android:id="@+id/TVoption5"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <Button
-        android:text="next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnFactor4"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="51dp"
-        android:onClick="onRateF4Click" />
+        android:layout_alignLeft="@+id/TVoption3"
+        android:layout_alignStart="@+id/TVoption3"
+        android:id="@+id/TVoption4" />
 
     <TextView
         android:text="5. "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView44"
+        android:layout_marginTop="22dp"
         android:id="@+id/textView45"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_above="@+id/btnFactor4"
-        android:layout_alignRight="@+id/TVoption4"
-        android:layout_alignEnd="@+id/TVoption4"
-        android:layout_marginBottom="33dp" />
+        android:layout_toEndOf="@+id/textView44"
+        android:layout_alignLeft="@+id/textView44"
+        android:layout_alignStart="@+id/textView44"
+        android:layout_toRightOf="@+id/textView44" />
 
-    <TextView
-        android:text="4. "
+    <Button
+        android:text="next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView44"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_above="@+id/TVoption5"
-        android:layout_toLeftOf="@+id/TVoption4"
-        android:layout_toStartOf="@+id/TVoption4"
-        android:layout_marginBottom="33dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:id="@+id/btnFactor4"
+        android:onClick="onRateF4Click" />
 
     <TextView
-        android:text="1. "
+        android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:id="@+id/textView35"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:layout_below="@+id/TVfactor4"
-        android:layout_alignLeft="@+id/textView39"
-        android:layout_alignStart="@+id/textView39" />
+        android:id="@+id/TVoption5"
+        android:layout_alignBaseline="@+id/textView45"
+        android:layout_alignBottom="@+id/textView45"
+        android:layout_alignLeft="@+id/TVoption4"
+        android:layout_alignStart="@+id/TVoption4" />
+
+    <TextView
+        android:text="Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:id="@+id/textView14"
+        android:layout_above="@+id/TVoption1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -152,31 +163,24 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/rateF4O1"
-        android:layout_alignLeft="@+id/textView14"
-        android:layout_alignStart="@+id/textView14"
-        android:layout_alignTop="@+id/TVoption1"
-        android:layout_above="@+id/rateF4O2" />
-
-    <TextView
-        android:text="Rate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView14"
-        android:layout_marginRight="36dp"
-        android:layout_marginEnd="36dp"
-        android:layout_above="@+id/rateF4O1"
+        android:layout_alignBaseline="@+id/TVoption1"
+        android:layout_alignBottom="@+id/TVoption1"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
+        android:layout_below="@+id/rateF4O1"
+        android:layout_alignRight="@+id/rateF4O1"
+        android:layout_alignEnd="@+id/rateF4O1"
         android:id="@+id/rateF4O2"
-        android:layout_above="@+id/rateF4O3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignLeft="@+id/rateF4O1"
         android:layout_alignStart="@+id/rateF4O1" />
 
@@ -185,25 +189,24 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/rateF4O4"
-        android:layout_alignBaseline="@+id/TVoption4"
-        android:layout_alignBottom="@+id/TVoption4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/rateF4O5"
-        android:layout_alignStart="@+id/rateF4O5" />
+        android:layout_below="@+id/rateF4O2"
+        android:layout_alignRight="@+id/rateF4O2"
+        android:layout_alignEnd="@+id/rateF4O2"
+        android:id="@+id/rateF4O3"
+        android:layout_alignLeft="@+id/rateF4O2"
+        android:layout_alignStart="@+id/rateF4O2" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/rateF4O3"
-        android:layout_above="@+id/rateF4O4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/rateF4O2"
-        android:layout_alignStart="@+id/rateF4O2" />
+        android:layout_below="@+id/rateF4O3"
+        android:layout_alignRight="@+id/rateF4O3"
+        android:layout_alignEnd="@+id/rateF4O3"
+        android:id="@+id/rateF4O4"
+        android:layout_alignLeft="@+id/rateF4O3"
+        android:layout_alignStart="@+id/rateF4O3" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -211,9 +214,11 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/rateF4O5"
-        android:layout_below="@+id/rateF4O4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/rateF4O2"
-        android:layout_alignStart="@+id/rateF4O2" />
+        android:layout_alignBaseline="@+id/TVoption5"
+        android:layout_alignBottom="@+id/TVoption5"
+        android:layout_alignRight="@+id/rateF4O4"
+        android:layout_alignEnd="@+id/rateF4O4"
+        android:layout_alignLeft="@+id/rateF4O4"
+        android:layout_alignStart="@+id/rateF4O4" />
+
 </RelativeLayout>
