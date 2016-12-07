@@ -127,7 +127,7 @@ public class Factor3 extends AppCompatActivity {
 
             //helper.addDecision(d);
 
-            //passing options to factors
+            //passing options to factor 4
             Intent intent = new Intent(Factor3.this, Factor4.class);
             // ** topic
             intent.putExtra("TVdtopic", dtopic);

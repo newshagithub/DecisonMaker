@@ -145,12 +145,79 @@ public class Factor5 extends AppCompatActivity {
             int rateF5O5num = Integer.parseInt(rateF5O5str);
 
             //insert the details in db
-            //Decision d = new Decision();
-            // d.setOption(option1str);
+            //Decision d1 = new Decision();
+            // d1.setTopic(dtopic);
+            // d1.setOption(option1);
+            // d1.setFactor(factor1);
+            // d1.setWeight(weight1num);
+            // d1.setF1rate(rateF1O1num);
+            // d1.setF2rate(rateF2O1num);
+            // d1.setF3rate(rateF3O1num);
+            // d1.setF4rate(rateF4O1num);
+            // d1.setF5rate(rateF5O1num);
+            // d1.setResult(result1);
 
-            //helper.addDecision(d);
+            //helper.addDecision(d1);
 
-            //passing options to factors
+            //Decision d2 = new Decision();
+            // d2.setTopic(dtopic);
+            // d2.setOption(option2);
+            // d2.setFactor(factor2);
+            // d2.setWeight(weight2num);
+            // d2.setF1rate(rateF1O2num);
+            // d2.setF2rate(rateF2O2num);
+            // d2.setF3rate(rateF3O2num);
+            // d2.setF4rate(rateF4O2num);
+            // d2.setF5rate(rateF5O2num);
+            // d2.setResult(result2);
+
+            //helper.addDecision(d3);
+
+            //Decision d3 = new Decision();
+            // d3.setTopic(dtopic);
+            // d3.setOption(option3);
+            // d3.setFactor(factor3);
+            // d3.setWeight(weight3num);
+            // d3.setF1rate(rateF1O3num);
+            // d3.setF2rate(rateF2O3num);
+            // d3.setF3rate(rateF3O3num);
+            // d3.setF4rate(rateF4O3num);
+            // d3.setF5rate(rateF5O3num);
+            // d3.setResult(result3);
+
+            //helper.addDecision(d3);
+
+            //Decision d4 = new Decision();
+            // d4.setTopic(dtopic);
+            // d4.setOption(option4);
+            // d4.setFactor(factor4);
+            // d4.setWeight(weight4num);
+            // d4.setF1rate(rateF1O4num);
+            // d4.setF2rate(rateF2O4num);
+            // d4.setF3rate(rateF3O4num);
+            // d4.setF4rate(rateF4O4num);
+            // d4.setF5rate(rateF5O4num);
+            // d4.setResult(result4);
+
+            //helper.addDecision(d4);
+
+            //Decision d5 = new Decision();
+            // d5.setTopic(dtopic);
+            // d5.setOption(option5);
+            // d5.setFactor(factor5);
+            // d5.setWeight(weight5num);
+            // d5.setF1rate(rateF1O5num);
+            // d5.setF2rate(rateF2O5num);
+            // d5.setF3rate(rateF3O5num);
+            // d5.setF4rate(rateF4O5num);
+            // d5.setF5rate(rateF5O5num);
+            // d5.setResult(result5);
+
+            //helper.addDecision(d5);
+
+
+
+            //passing options to results
             Intent intent = new Intent(Factor5.this, Result.class);
             // ** topic
             intent.putExtra("TVdtopic", dtopic);
@@ -202,6 +269,8 @@ public class Factor5 extends AppCompatActivity {
             intent.putExtra("rateF5O3", rateF5O3num);
             intent.putExtra("rateF5O4", rateF5O4num);
             intent.putExtra("rateF5O5", rateF5O5num);
+
+
 
             startActivity(intent);
 
