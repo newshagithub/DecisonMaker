@@ -10,4 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.newsha.decisonmaker.Result">
 
+    <TextView
+        android:text="your best option is:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:id="@+id/textView21" />
+
+    <TextView
+        android:text="@string/emptyString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView21"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/TVselected" />
+
 </RelativeLayout>

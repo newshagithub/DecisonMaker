@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by newsha on 11/16/16.
  */
@@ -92,7 +95,110 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     // operations
 
-    // Getting single decision
+
+
+    // Getting single decision result
+    public Decision getDecisionByTopic(String topic) {
+
+        Decision decision = null;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(TABLE_NAME, new String[]{
+                        COLUMN_TOPIC,
+                        COLUMN_RESULT},
+                COLUMN_TOPIC + "=?", new String[]{topic}, null, null, null, null);
+
+        if (cursor != null) {
+            cursor.moveToFirst();
+        }
+
+        decision = new Decision(cursor.getString(0),
+                Integer.parseInt(cursor.getString(1)));
+
+        return decision;
+
+    }
+
+   // public List<Result> getListResultByDecisionTopic(int topic) {
+
+   //     List<Result> listResult = null;
+
+   //     SQLiteDatabase db = this.getWritableDatabase();
+
+   //     String query = "SELECT option, result"
+    //            + "FROM decision"
+    //            + "WHERE topic = " + topic;
+
+    //    Cursor cursor = db.rawQuery(query, null);
+
+    //    if (cursor.moveToFirst()) {
+    //        listResult = new ArrayList<>();
+    //        do {
+    //            Result result = new Result(
+    //                    cursor.getString(0),
+    //                    Integer.parseInt(cursor.getString(1))
+    //            );
+    //            listResult.add(result);
+    //        } while (cursor.moveToNext());
+    //    }
+
+    //    return listResult;
+
+    //}
+
+   // public List<Result> getListFactorByDecisionTopic(int topic) {
+
+    //    List<Result> listResult = null;
+
+    //    SQLiteDatabase db = this.getWritableDatabase();
+
+    //    String query = "SELECT factor, weight"
+    //            + "FROM decision"
+    //            + "WHERE topic = " + topic;
+
+    //    Cursor cursor = db.rawQuery(query, null);
+
+    //    if (cursor.moveToFirst()) {
+    //        listResult = new ArrayList<>();
+    //        do {
+    //            Result result = new Result(
+    //                    cursor.getString(0),
+    //                    Integer.parseInt(cursor.getString(1))
+    //            );
+    //            listResult.add(result);
+    //        } while (cursor.moveToNext());
+    //    }
+
+    //    return listResult;
+
+    //}
+
+    //public List<Result> getListOptionByDecisionTopic(int topic) {
+
+    //    List<Result> listResult = null;
+
+     //   SQLiteDatabase db = this.getWritableDatabase();
+
+     //   String query = "SELECT option"
+     //           + "FROM decision"
+     //           + "WHERE topic = " + topic;
+
+     //   Cursor cursor = db.rawQuery(query, null);
+
+     //   if (cursor.moveToFirst()) {
+     //       listResult = new ArrayList<>();
+     //       do {
+     //           Result result = new Result(
+     //                   cursor.getString(0)
+     //           );
+     //           listResult.add(result);
+    //        } while (cursor.moveToNext());
+    //    }
+
+    //    return listResult;
+
+   // }
 
 }
 

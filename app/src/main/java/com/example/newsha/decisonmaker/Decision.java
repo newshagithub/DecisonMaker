@@ -9,6 +9,9 @@ public class Decision {
     int weight, f1rate, f2rate, f3rate, f4rate, f5rate, result;
     String topic, option, factor;
 
+    public Decision(String topic, int result) {
+    }
+
 
     //** public void setId(int id) {
     //this.id = id;

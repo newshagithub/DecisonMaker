@@ -80,10 +80,10 @@ public class Factor5 extends AppCompatActivity {
         dtopic = getIntent().getStringExtra("TVdtopic");
 
         // ** rest of factors
-        factor2 = getIntent().getStringExtra("TVfactor1");
-        factor3 = getIntent().getStringExtra("TVfactor2");
-        factor4 = getIntent().getStringExtra("TVfactor3");
-        factor5 = getIntent().getStringExtra("TVfactor4");
+        factor1 = getIntent().getStringExtra("TVfactor1");
+        factor2 = getIntent().getStringExtra("TVfactor2");
+        factor3 = getIntent().getStringExtra("TVfactor3");
+        factor4 = getIntent().getStringExtra("TVfactor4");
 
         // ** weights
         weight1num = getIntent().getIntExtra("TVweight1", 0);
@@ -143,6 +143,9 @@ public class Factor5 extends AppCompatActivity {
             int rateF5O3num = Integer.parseInt(rateF5O3str);
             int rateF5O4num = Integer.parseInt(rateF5O4str);
             int rateF5O5num = Integer.parseInt(rateF5O5str);
+
+
+
 
             //insert the details in db
             //Decision d1 = new Decision();
