@@ -11,22 +11,22 @@ import android.widget.Toast;
 public class Factor1 extends AppCompatActivity {
 
     // ** class-level variables
-    String dtopic = "";
-    String option1 = "";
-    String option2 = "";
-    String option3 = "";
-    String option4 = "";
-    String option5 = "";
-    String factor1 = "";
-    String factor2 = "";
-    String factor3 = "";
-    String factor4 = "";
-    String factor5 = "";
-    int weight1num = 0;
-    int weight2num = 0;
-    int weight3num = 0;
-    int weight4num = 0;
-    int weight5num = 0;
+    String dtopic;
+    String option1;
+    String option2;
+    String option3;
+    String option4;
+    String option5;
+    String factor1;
+    String factor2;
+    String factor3;
+    String factor4;
+    String factor5;
+    int weight1num;
+    int weight2num;
+    int weight3num;
+    int weight4num;
+    int weight5num;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,11 +122,11 @@ public class Factor1 extends AppCompatActivity {
             intent.putExtra("TVfactor4", factor4);
             intent.putExtra("TVfactor5", factor5);
             // ** weights
-            intent.putExtra("weight1", weight1num);
-            intent.putExtra("weight2", weight2num);
-            intent.putExtra("weight3", weight3num);
-            intent.putExtra("weight4", weight4num);
-            intent.putExtra("weight5", weight5num);
+            intent.putExtra("TVweight1", weight1num);
+            intent.putExtra("TVweight2", weight2num);
+            intent.putExtra("TVweight3", weight3num);
+            intent.putExtra("TVweight4", weight4num);
+            intent.putExtra("TVweight5", weight5num);
             // ** rateF1
             intent.putExtra("rateF1O1", rateF1O1num);
             intent.putExtra("rateF1O2", rateF1O2num);

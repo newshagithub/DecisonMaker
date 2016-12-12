@@ -34,7 +34,7 @@
         android:layout_toEndOf="@+id/add_decision_btn"
         android:layout_marginLeft="18dp"
         android:layout_marginStart="18dp"
-        android:onClick="onBtnClick" />
+        android:onClick="onBtnClick (MainActivity)" />
 
     <Button
         android:text="add"
@@ -46,7 +46,7 @@
         android:layout_below="@+id/dTopic"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="onBtnClick" />
+        android:onClick="onBtnClick (MainActivity)" />
 
     <TextView
         android:layout_width="wrap_content"

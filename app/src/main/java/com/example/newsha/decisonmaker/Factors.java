@@ -13,19 +13,24 @@ import android.widget.Toast;
 public class Factors extends AppCompatActivity {
 
     // ** class-level variables
-    String dtopic = "";
-    String option1 = "";
-    String option2 = "";
-    String option3 = "";
-    String option4 = "";
-    String option5 = "";
+    String dtopic;
+    String option1;
+    String option2;
+    String option3;
+    String option4;
+    String option5;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_factors);
 
+            // ** topic
+            dtopic = getIntent().getStringExtra("TVdtopic");
 
+            // ** options
             option1 = getIntent().getStringExtra("TVoption1");
             option2 = getIntent().getStringExtra("TVoption2");
             option3 = getIntent().getStringExtra("TVoption3");

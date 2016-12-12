@@ -76,16 +76,6 @@
         android:id="@+id/TVoption2" />
 
     <TextView
-        android:text="3. "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView39"
-        android:layout_alignLeft="@+id/textView39"
-        android:layout_alignStart="@+id/textView39"
-        android:layout_marginTop="29dp"
-        android:id="@+id/textView42" />
-
-    <TextView
         android:text="@string/emptyString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -220,5 +210,15 @@
         android:layout_alignEnd="@+id/rateF4O4"
         android:layout_alignLeft="@+id/rateF4O4"
         android:layout_alignStart="@+id/rateF4O4" />
+
+    <TextView
+        android:text="3. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView42"
+        android:layout_alignBaseline="@+id/rateF4O3"
+        android:layout_alignBottom="@+id/rateF4O3"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39" />
 
 </RelativeLayout>

@@ -1,53 +1,55 @@
 package com.example.newsha.decisonmaker;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class Result extends AppCompatActivity {
 
     // ** class-level variables
-    String dtopic = "";
-    String option1 = "";
-    String option2 = "";
-    String option3 = "";
-    String option4 = "";
-    String option5 = "";
-    String factor1 = "";
-    String factor2 = "";
-    String factor3 = "";
-    String factor4 = "";
-    String factor5 = "";
-    int weight1num = 0;
-    int weight2num = 0;
-    int weight3num = 0;
-    int weight4num = 0;
-    int weight5num = 0;
-    int rateF1O1num = 0;
-    int rateF1O2num = 0;
-    int rateF1O3num = 0;
-    int rateF1O4num = 0;
-    int rateF1O5num = 0;
-    int rateF2O1num = 0;
-    int rateF2O2num = 0;
-    int rateF2O3num = 0;
-    int rateF2O4num = 0;
-    int rateF2O5num = 0;
-    int rateF3O1num = 0;
-    int rateF3O2num = 0;
-    int rateF3O3num = 0;
-    int rateF3O4num = 0;
-    int rateF3O5num = 0;
-    int rateF4O1num = 0;
-    int rateF4O2num = 0;
-    int rateF4O3num = 0;
-    int rateF4O4num = 0;
-    int rateF4O5num = 0;
-    int rateF5O1num = 0;
-    int rateF5O2num = 0;
-    int rateF5O3num = 0;
-    int rateF5O4num = 0;
-    int rateF5O5num = 0;
+    String dtopic;
+    String option1;
+    String option2;
+    String option3;
+    String option4;
+    String option5;
+    String factor1;
+    String factor2;
+    String factor3;
+    String factor4;
+    String factor5;
+    int weight1num;
+    int weight2num;
+    int weight3num;
+    int weight4num;
+    int weight5num;
+    int rateF1O1num;
+    int rateF1O2num;
+    int rateF1O3num;
+    int rateF1O4num;
+    int rateF1O5num;
+    int rateF2O1num;
+    int rateF2O2num;
+    int rateF2O3num;
+    int rateF2O4num;
+    int rateF2O5num;
+    int rateF3O1num;
+    int rateF3O2num;
+    int rateF3O3num;
+    int rateF3O4num;
+    int rateF3O5num;
+    int rateF4O1num;
+    int rateF4O2num;
+    int rateF4O3num;
+    int rateF4O4num;
+    int rateF4O5num;
+    int rateF5O1num;
+    int rateF5O2num;
+    int rateF5O3num;
+    int rateF5O4num;
+    int rateF5O5num;
     int[] factors;
     int[] f1Rate;
     int[] f2Rate;
@@ -123,6 +125,8 @@ public class Result extends AppCompatActivity {
 
         // ** topic
         dtopic = getIntent().getStringExtra("TVdtopic");
+        TextView tv = (TextView) findViewById(R.id.TVdtopic);
+        tv.setText(dtopic);
 
         // ** options
         option1 = getIntent().getStringExtra("TVoption1");
@@ -180,16 +184,15 @@ public class Result extends AppCompatActivity {
         rateF5O4num = getIntent().getIntExtra("rateF5O4", 0);
         rateF5O5num = getIntent().getIntExtra("rateF5O5", 0);
 
-        int[] factors = {weight1num, weight2num, weight3num, weight4num, weight5num};
-        int[] f1Rate = {rateF1O1num, rateF1O2num, rateF1O3num, rateF1O4num, rateF1O5num};
-        int[] f2Rate = {rateF2O1num, rateF2O2num, rateF2O3num, rateF2O4num, rateF2O5num};
-        int[] f3Rate = {rateF3O1num, rateF3O2num, rateF3O3num, rateF3O4num, rateF3O5num};
-        int[] f4Rate = {rateF4O1num, rateF4O2num, rateF4O3num, rateF4O4num, rateF4O5num};
-        int[] f5Rate = {rateF5O1num, rateF5O2num, rateF5O3num, rateF5O4num, rateF5O5num};
+        //int[] factors = {weight1num, weight2num, weight3num, weight4num, weight5num};
+        //int[] f1Rate = {rateF1O1num, rateF1O2num, rateF1O3num, rateF1O4num, rateF1O5num};
+        //int[] f2Rate = {rateF2O1num, rateF2O2num, rateF2O3num, rateF2O4num, rateF2O5num};
+        //int[] f3Rate = {rateF3O1num, rateF3O2num, rateF3O3num, rateF3O4num, rateF3O5num};
+        //int[] f4Rate = {rateF4O1num, rateF4O2num, rateF4O3num, rateF4O4num, rateF4O5num};
+        //int[] f5Rate = {rateF5O1num, rateF5O2num, rateF5O3num, rateF5O4num, rateF5O5num};
 
 
         //int max = PerformCalculation(factors, f1Rate, f2Rate, f3Rate, f4Rate, f5Rate);
-
 
         int sumOption1 = (weight1num * rateF1O1num) + (weight2num * rateF2O1num) + (weight3num * rateF3O1num) + (weight4num * rateF4O1num) + (weight5num * rateF5O1num);
         int sumOption2 = (weight1num * rateF1O2num) + (weight2num * rateF2O2num) + (weight3num * rateF3O2num) + (weight4num * rateF4O2num) + (weight5num * rateF5O2num);
@@ -202,16 +205,37 @@ public class Result extends AppCompatActivity {
 
         int max = Integer.MIN_VALUE;
         String selected = null;
-        for (int i = 0; i < sumArray.length; i++) {
+        int i;
+        for (i = 0; i < sumArray.length; i++) {
             if (sumArray[i] > max) {
                 max = sumArray[i];
+                selected = optionArray[i];
             }
-            selected = optionArray[i];
         }
-        
-        TextView tv = (TextView) findViewById(R.id.TVselected);
-        tv.setText(selected);
+
+        //String maxStr = Integer.toString(max);
+        //TextView tv2 = (TextView) findViewById(R.id.TVmax);
+        //tv2.setText(maxStr);
+
+        TextView tv1 = (TextView) findViewById(R.id.TVselected);
+        tv1.setText(selected);
 
     }
 
+    public void onbtnClick(View v) {
+        // ** if Share button is clicked
+        if (v.getId() == R.id.btnShare) {
+
+            Intent i = new Intent(Result.this, MainActivity.class);
+            startActivity(i);
+        }
+
+        // ** if Home button is clicked
+        if (v.getId() == R.id.btnGoHome) {
+
+            Intent i = new Intent(Result.this, MainActivity.class);
+            startActivity(i);
+        }
+
+    }
 }

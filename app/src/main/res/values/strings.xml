@@ -5,4 +5,5 @@
     <string name="factor_page_intro">Insert your factors that you would need to consider for this decision making here and weigh them 1 to 5 (unique numbers):</string>
     <string name="factor1_intro">Rate each option below based on factor,  </string>
     <string name="emptyString"></string>
+    <string name="menu_mailtext" />
 </resources>

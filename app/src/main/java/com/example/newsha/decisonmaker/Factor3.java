@@ -9,32 +9,32 @@ import android.widget.TextView;
 
 public class Factor3 extends AppCompatActivity {
     // ** class-level variables
-    String dtopic = "";
-    String option1 = "";
-    String option2 = "";
-    String option3 = "";
-    String option4 = "";
-    String option5 = "";
-    String factor1 = "";
-    String factor2 = "";
-    String factor3 = "";
-    String factor4 = "";
-    String factor5 = "";
-    int weight1num = 0;
-    int weight2num = 0;
-    int weight3num = 0;
-    int weight4num = 0;
-    int weight5num = 0;
-    int rateF1O1num = 0;
-    int rateF1O2num = 0;
-    int rateF1O3num = 0;
-    int rateF1O4num = 0;
-    int rateF1O5num = 0;
-    int rateF2O1num = 0;
-    int rateF2O2num = 0;
-    int rateF2O3num = 0;
-    int rateF2O4num = 0;
-    int rateF2O5num = 0;
+    String dtopic;
+    String option1;
+    String option2;
+    String option3;
+    String option4;
+    String option5;
+    String factor1;
+    String factor2;
+    String factor3;
+    String factor4;
+    String factor5;
+    int weight1num;
+    int weight2num;
+    int weight3num;
+    int weight4num;
+    int weight5num;
+    int rateF1O1num;
+    int rateF1O2num;
+    int rateF1O3num;
+    int rateF1O4num;
+    int rateF1O5num;
+    int rateF2O1num;
+    int rateF2O2num;
+    int rateF2O3num;
+    int rateF2O4num;
+    int rateF2O5num;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,11 +144,11 @@ public class Factor3 extends AppCompatActivity {
             intent.putExtra("TVfactor4", factor4);
             intent.putExtra("TVfactor5", factor5);
             // ** weights
-            intent.putExtra("weight1", weight1num);
-            intent.putExtra("weight2", weight2num);
-            intent.putExtra("weight3", weight3num);
-            intent.putExtra("weight4", weight4num);
-            intent.putExtra("weight5", weight5num);
+            intent.putExtra("TVweight1", weight1num);
+            intent.putExtra("TVweight2", weight2num);
+            intent.putExtra("TVweight3", weight3num);
+            intent.putExtra("TVweight4", weight4num);
+            intent.putExtra("TVweight5", weight5num);
             // ** rateF1
             intent.putExtra("rateF1O1", rateF1O1num);
             intent.putExtra("rateF1O2", rateF1O2num);
@@ -162,11 +162,11 @@ public class Factor3 extends AppCompatActivity {
             intent.putExtra("rateF2O4", rateF2O4num);
             intent.putExtra("rateF2O5", rateF2O5num);
             // ** rateF3
-            intent.putExtra("rateF2O1", rateF3O1num);
-            intent.putExtra("rateF2O2", rateF3O2num);
-            intent.putExtra("rateF2O3", rateF3O3num);
-            intent.putExtra("rateF2O4", rateF3O4num);
-            intent.putExtra("rateF2O5", rateF3O5num);
+            intent.putExtra("rateF3O1", rateF3O1num);
+            intent.putExtra("rateF3O2", rateF3O2num);
+            intent.putExtra("rateF3O3", rateF3O3num);
+            intent.putExtra("rateF3O4", rateF3O4num);
+            intent.putExtra("rateF3O5", rateF3O5num);
 
             startActivity(intent);
 

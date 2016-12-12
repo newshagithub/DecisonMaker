@@ -23,6 +23,9 @@
         <activity android:name=".Factor4" />
         <activity android:name=".Factor5" />
         <activity android:name=".Result"></activity>
+
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.INTERNET" />
     </application>
 
 </manifest>
