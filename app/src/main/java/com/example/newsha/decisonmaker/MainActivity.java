@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onBtnClick(View v) {
+    public void onStartClick(View v) {
         // ** if add button is clicked
         if (v.getId() == R.id.add_decision_btn) {
 
