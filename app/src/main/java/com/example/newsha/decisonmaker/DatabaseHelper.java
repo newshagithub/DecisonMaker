@@ -97,7 +97,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
 
-    // Getting single decision result
+    // Getting single decision?????!!
     public Decision getDecisionByTopic(String topic) {
 
         Decision decision = null;
@@ -113,8 +113,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             cursor.moveToFirst();
         }
 
-        decision = new Decision(cursor.getString(0),
-                Integer.parseInt(cursor.getString(1)));
+        decision = new Decision(cursor.getString(0));
 
         return decision;
 

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RatingBar;
@@ -49,6 +50,7 @@ public class Factors extends AppCompatActivity {
             EditText factor4 = (EditText) findViewById(R.id.etFactor4);
             EditText factor5 = (EditText) findViewById(R.id.etFactor5);
 
+
             String factor1str = factor1.getText().toString();
             String factor2str = factor2.getText().toString();
             String factor3str = factor3.getText().toString();
@@ -57,10 +59,15 @@ public class Factors extends AppCompatActivity {
 
             // weight for each factor
             EditText wfactor1 = (EditText) findViewById(R.id.ratef1);
+            wfactor1.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText wfactor2 = (EditText) findViewById(R.id.ratef2);
+            wfactor2.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText wfactor3 = (EditText) findViewById(R.id.ratef3);
+            wfactor3.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText wfactor4 = (EditText) findViewById(R.id.ratef4);
+            wfactor4.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText wfactor5 = (EditText) findViewById(R.id.ratef5);
+            wfactor5.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
 
             String ratef1 = wfactor1.getText().toString();
             String ratef2 = wfactor2.getText().toString();
@@ -77,13 +84,31 @@ public class Factors extends AppCompatActivity {
 
             // check if at least 1 factor are entered
             if ((factor1str == null || factor1str.trim().equals("null") || factor1str.trim()
-                    .length() <= 0)) {
+                    .length() <= 0)
+                    //|| (ratef1 == null || ratef1.trim().equals("null") || ratef1.trim()
+                    //.length() <= 0)
+            ) {
 
                 //popup error msg
-                Toast pass = Toast.makeText(Factors.this, "Please enter at least 1 factor. :)", Toast.LENGTH_SHORT);
+                Toast pass = Toast.makeText(Factors.this, "Please enter at least 1 factor and its weight. :)", Toast.LENGTH_SHORT);
                 pass.show();
 
+            //} else if ((factor2str == null || factor2str.trim().equals("null") || factor2str.trim()
+            //        .length() <= 0) || (ratef2 == null || ratef2.trim().equals("null") || ratef2.trim()
+            //        .length() <= 0) || (factor3str == null || factor3str.trim().equals("null") || factor3str.trim()
+            //        .length() <= 0) || (ratef3 == null || ratef3.trim().equals("null") || ratef3.trim()
+            //        .length() <= 0) || (factor4str == null || factor4str.trim().equals("null") || factor4str.trim()
+            //        .length() <= 0) || (ratef4 == null || ratef4.trim().equals("null") || ratef4.trim()
+            //        .length() <= 0) || (factor5str == null || factor5str.trim().equals("null") || factor5str.trim()
+            //        .length() <= 0) || (ratef5 == null || ratef5.trim().equals("null") || ratef5.trim()
+            //        .length() <= 0)) {
+
+                //popup error msg
+            //    Toast pass = Toast.makeText(Factors.this, "Please enter 0 for empty fields. :P", Toast.LENGTH_SHORT);
+            //    pass.show();
+
             } else {
+
 
                 //insert the details in db
                 //Decision d = new Decision();

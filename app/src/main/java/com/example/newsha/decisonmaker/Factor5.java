@@ -3,12 +3,14 @@ package com.example.newsha.decisonmaker;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class Factor5 extends AppCompatActivity {
 
+    DatabaseHelper helper = new DatabaseHelper(this);
     // ** class-level variables
     String dtopic;
     String option1;
@@ -126,10 +128,15 @@ public class Factor5 extends AppCompatActivity {
         if (v.getId() == R.id.btnFactor5) {
 
             EditText rateF5O1 = (EditText) findViewById(R.id.rateF5O1);
+            rateF5O1.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF5O2 = (EditText) findViewById(R.id.rateF5O2);
+            rateF5O2.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF5O3 = (EditText) findViewById(R.id.rateF5O3);
+            rateF5O3.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF5O4 = (EditText) findViewById(R.id.rateF5O4);
+            rateF5O4.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF5O5 = (EditText) findViewById(R.id.rateF5O5);
+            rateF5O5.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
 
             String rateF5O1str = rateF5O1.getText().toString();
             String rateF5O2str = rateF5O2.getText().toString();
@@ -148,75 +155,75 @@ public class Factor5 extends AppCompatActivity {
 
 
             //insert the details in db
-            //Decision d1 = new Decision();
-            // d1.setTopic(dtopic);
-            // d1.setOption(option1);
-            // d1.setFactor(factor1);
-            // d1.setWeight(weight1num);
-            // d1.setF1rate(rateF1O1num);
-            // d1.setF2rate(rateF2O1num);
-            // d1.setF3rate(rateF3O1num);
-            // d1.setF4rate(rateF4O1num);
-            // d1.setF5rate(rateF5O1num);
+            Decision d1 = new Decision();
+            d1.setTopic(dtopic);
+            d1.setOption(option1);
+            d1.setFactor(factor1);
+            d1.setWeight(weight1num);
+            d1.setF1rate(rateF1O1num);
+            d1.setF2rate(rateF2O1num);
+            d1.setF3rate(rateF3O1num);
+            d1.setF4rate(rateF4O1num);
+            d1.setF5rate(rateF5O1num);
             // d1.setResult(result1);
 
-            //helper.addDecision(d1);
+            helper.addDecision(d1);
 
-            //Decision d2 = new Decision();
-            // d2.setTopic(dtopic);
-            // d2.setOption(option2);
-            // d2.setFactor(factor2);
-            // d2.setWeight(weight2num);
-            // d2.setF1rate(rateF1O2num);
-            // d2.setF2rate(rateF2O2num);
-            // d2.setF3rate(rateF3O2num);
-            // d2.setF4rate(rateF4O2num);
-            // d2.setF5rate(rateF5O2num);
+            Decision d2 = new Decision();
+            d2.setTopic(dtopic);
+            d2.setOption(option2);
+            d2.setFactor(factor2);
+            d2.setWeight(weight2num);
+            d2.setF1rate(rateF1O2num);
+            d2.setF2rate(rateF2O2num);
+            d2.setF3rate(rateF3O2num);
+            d2.setF4rate(rateF4O2num);
+            d2.setF5rate(rateF5O2num);
             // d2.setResult(result2);
 
-            //helper.addDecision(d3);
+            helper.addDecision(d2);
 
-            //Decision d3 = new Decision();
-            // d3.setTopic(dtopic);
-            // d3.setOption(option3);
-            // d3.setFactor(factor3);
-            // d3.setWeight(weight3num);
-            // d3.setF1rate(rateF1O3num);
-            // d3.setF2rate(rateF2O3num);
-            // d3.setF3rate(rateF3O3num);
-            // d3.setF4rate(rateF4O3num);
-            // d3.setF5rate(rateF5O3num);
+            Decision d3 = new Decision();
+            d3.setTopic(dtopic);
+            d3.setOption(option3);
+            d3.setFactor(factor3);
+            d3.setWeight(weight3num);
+            d3.setF1rate(rateF1O3num);
+            d3.setF2rate(rateF2O3num);
+            d3.setF3rate(rateF3O3num);
+            d3.setF4rate(rateF4O3num);
+            d3.setF5rate(rateF5O3num);
             // d3.setResult(result3);
 
-            //helper.addDecision(d3);
+            helper.addDecision(d3);
 
-            //Decision d4 = new Decision();
-            // d4.setTopic(dtopic);
-            // d4.setOption(option4);
-            // d4.setFactor(factor4);
-            // d4.setWeight(weight4num);
-            // d4.setF1rate(rateF1O4num);
-            // d4.setF2rate(rateF2O4num);
-            // d4.setF3rate(rateF3O4num);
-            // d4.setF4rate(rateF4O4num);
-            // d4.setF5rate(rateF5O4num);
-            // d4.setResult(result4);
+            Decision d4 = new Decision();
+            d4.setTopic(dtopic);
+            d4.setOption(option4);
+            d4.setFactor(factor4);
+            d4.setWeight(weight4num);
+            d4.setF1rate(rateF1O4num);
+            d4.setF2rate(rateF2O4num);
+            d4.setF3rate(rateF3O4num);
+            d4.setF4rate(rateF4O4num);
+            d4.setF5rate(rateF5O4num);
+            //d4.setResult(result4);
 
-            //helper.addDecision(d4);
+            helper.addDecision(d4);
 
-            //Decision d5 = new Decision();
-            // d5.setTopic(dtopic);
-            // d5.setOption(option5);
-            // d5.setFactor(factor5);
-            // d5.setWeight(weight5num);
-            // d5.setF1rate(rateF1O5num);
-            // d5.setF2rate(rateF2O5num);
-            // d5.setF3rate(rateF3O5num);
-            // d5.setF4rate(rateF4O5num);
-            // d5.setF5rate(rateF5O5num);
+            Decision d5 = new Decision();
+            d5.setTopic(dtopic);
+            d5.setOption(option5);
+            d5.setFactor(factor5);
+            d5.setWeight(weight5num);
+            d5.setF1rate(rateF1O5num);
+            d5.setF2rate(rateF2O5num);
+            d5.setF3rate(rateF3O5num);
+            d5.setF4rate(rateF4O5num);
+            d5.setF5rate(rateF5O5num);
             // d5.setResult(result5);
 
-            //helper.addDecision(d5);
+            helper.addDecision(d5);
 
 
 
@@ -273,9 +280,7 @@ public class Factor5 extends AppCompatActivity {
             intent.putExtra("rateF5O4", rateF5O4num);
             intent.putExtra("rateF5O5", rateF5O5num);
 
-
-
-            startActivity(intent);
+           startActivity(intent);
 
         }
     }

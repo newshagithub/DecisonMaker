@@ -3,6 +3,7 @@ package com.example.newsha.decisonmaker;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -103,10 +104,15 @@ public class Factor3 extends AppCompatActivity {
         if (v.getId() == R.id.btnFactor3) {
 
             EditText rateF3O1 = (EditText) findViewById(R.id.rateF3O1);
+            rateF3O1.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF3O2 = (EditText) findViewById(R.id.rateF3O2);
+            rateF3O2.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF3O3 = (EditText) findViewById(R.id.rateF3O3);
+            rateF3O3.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF3O4 = (EditText) findViewById(R.id.rateF3O4);
+            rateF3O4.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF3O5 = (EditText) findViewById(R.id.rateF3O5);
+            rateF3O5.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
 
             String rateF3O1str = rateF3O1.getText().toString();
             String rateF3O2str = rateF3O2.getText().toString();

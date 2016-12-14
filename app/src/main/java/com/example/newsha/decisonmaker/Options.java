@@ -49,6 +49,13 @@ public class Options extends AppCompatActivity {
                 Toast pass = Toast.makeText(Options.this, "Please enter at least 2 options. :)", Toast.LENGTH_SHORT);
                 pass.show();
 
+            } else if ((option3str == null || option3str.trim().equals("null") || option3str.trim()
+                    .length() <= 0) || (option4str == null || option4str.trim().equals("null") || option4str.trim()
+                    .length() <= 0) || (option5str == null || option5str.trim().equals("null") || option5str.trim()
+                    .length() <= 0)) {
+                // ** popup error msg
+                Toast pass = Toast.makeText(Options.this, "Please enter 0 for empty fields. :P", Toast.LENGTH_SHORT);
+                pass.show();
             } else {
 
                 //insert the details in db

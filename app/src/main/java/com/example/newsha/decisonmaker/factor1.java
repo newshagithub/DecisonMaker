@@ -3,6 +3,7 @@ package com.example.newsha.decisonmaker;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -32,7 +33,6 @@ public class Factor1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_factor1);
-
 
             factor1 = getIntent().getStringExtra("TVfactor1");
             TextView tv = (TextView) findViewById(R.id.TVfactor1);
@@ -81,10 +81,15 @@ public class Factor1 extends AppCompatActivity {
         if (v.getId() == R.id.btnFactor1) {
 
             EditText rateF1O1 = (EditText) findViewById(R.id.rateF1O1);
+            rateF1O1.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF1O2 = (EditText) findViewById(R.id.rateF1O2);
+            rateF1O2.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF1O3 = (EditText) findViewById(R.id.rateF1O3);
+            rateF1O3.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF1O4 = (EditText) findViewById(R.id.rateF1O4);
+            rateF1O4.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
             EditText rateF1O5 = (EditText) findViewById(R.id.rateF1O5);
+            rateF1O5.setFilters(new InputFilter[]{new InputFilterMinMax("1", "5")});
 
             String rateF1O1str = rateF1O1.getText().toString();
             String rateF1O2str = rateF1O2.getText().toString();
